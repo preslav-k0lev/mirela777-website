@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="auth-container">
+
+    <div class="auth-card">
+
+        <h1>Mirela777</h1>
+        <p class="subtitle">
+            Влез в своя профил
+        </p>
+
+
+        <form method="POST">
+
+            {% csrf_token %}
+
+            <div class="input-group">
+                <label>Имейл</label>
+                <input 
+                type="email"
+                name="username"
+                placeholder="example@email.com">
+            </div>
+
+
+            <div class="input-group">
+
+                <label>Парола</label>
+
+                <input 
+                type="password"
+                name="password"
+                placeholder="••••••••">
+
+            </div>
+
+
+            <button type="submit">
+                Вход
+            </button>
+
+        </form>
+
+
+        <div class="switch">
+
+            Нямаш профил?
+            <a href="{% url 'register' %}">
+                Регистрация
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+{% endblock %}

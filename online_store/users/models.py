@@ -22,8 +22,11 @@ class User(AbstractUser):
 
     role = models.CharField(max_length=20, choices=ROLE_CHOICES, default='customer')
 
+
     # Email for logins
     email = models.EmailField(unique=True)
+    USERNAME_FIELD = "email"
+    REQUIRED_FIELDS = [""]
 
     class Meta:
         verbose_name_plural = "Users"

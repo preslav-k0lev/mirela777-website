@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+
+{% block content %}
+
+
+<div class="auth-container">
+
+<div class="auth-card">
+
+
+<h1>Mirela777</h1>
+
+<p class="subtitle">
+Създай нов профил
+</p>
+
+
+<form method="POST">
+
+{% csrf_token %}
+
+
+<div class="input-group">
+
+<label>Потребителско име</label>
+
+<input 
+type="text"
+name="username">
+
+</div>
+
+
+
+<div class="input-group">
+
+<label>Email</label>
+
+<input 
+type="email"
+name="email">
+
+</div>
+
+
+
+
+<div class="input-group">
+
+<label>Парола</label>
+
+<input type="password" name="password1">
+
+</div>
+
+
+
+
+<div class="input-group">
+
+<label>Повтори парола</label>
+
+<input type="password" name="password2">
+
+</div>
+
+
+<button>
+Регистрация
+</button>
+
+
+</form>
+
+
+
+<div class="switch">
+
+Имаш профил?
+
+<a href="{% url 'login' %}">
+Вход
+</a>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+
+{% endblock %}

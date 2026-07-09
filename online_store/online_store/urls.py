@@ -19,7 +19,8 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('products.urls'))  # Началната страница ще е продуктите
+    path('', include('products.urls')),  # Началната страница ще е продуктите
+    path('users/', include('users.urls')),
 ]
 
 
