@@ -1,0 +1,136 @@
+/* Дефиниране на цветовете за лесна промяна */
+:root {
+    --primary-beige: #f5f0e6; /* Много светло бежово за фон */
+    --accent-beige: #d2b48c; /* По-тъмно бежово за бутони и акценти */
+    --hover-beige: #c3a37a;
+    --text-grey: #4a4a4a; /* Тъмно сиво за четливост */
+    --light-grey: #e0e0e0; /* Светло сиво за бордери */
+    --white: #ffffff;
+}
+
+body {
+    background-color: var(--primary-beige);
+    color: var(--text-grey);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Контейнер за аутентикация */
+.auth-container {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Картата на формата */
+.auth-card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    max-width: 450px;
+    width: 100%;
+    border: 1px solid var(--light-grey);
+}
+
+/* Заглавие Mirela777 */
+.auth-card h1 {
+    text-align: center;
+    font-weight: 700;
+    color: var(--accent-beige);
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+/*За по-дребни заглания като Имейлът е изпратен*/
+.auth-card h2 {
+    text-align: center;
+    font-weight: 500;
+    color: var(--accent-beige);
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    text-align: center;
+    color: #888;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+}
+
+/* Групи за инпути */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-grey);
+    text-transform: uppercase;
+}
+
+.input-group input {
+    padding: 12px 15px;
+    border: 1px solid var(--light-grey);
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: var(--accent-beige);
+    box-shadow: 0 0 5px rgba(210, 180, 140, 0.3);
+}
+
+/* Бутон */
+button[type="submit"], .auth-card button {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--accent-beige);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover, .auth-card button:hover {
+    background-color: var(--hover-beige);
+}
+
+/* Превключване и Линкове */
+.switch {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.switch a, .auth-card a {
+    color: var(--accent-beige);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.switch a:hover, .auth-card a:hover {
+    text-decoration: underline;
+}
+
+/* Специфично за съобщението за парола */
+.auth-card a[innertext*="Strong password"] {
+    display: block;
+    font-size: 0.75rem;
+    color: #888;
+    margin-bottom: 5px;
+}

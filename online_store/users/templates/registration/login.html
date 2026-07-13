@@ -25,10 +25,10 @@ Login
 
             <div class="input-group">
                 <label>Имейл</label>
-                <input 
-                type="email"
-                name="username"
-                placeholder="example@email.com">
+                <input
+                        type="email"
+                        name="username"
+                        placeholder="example@email.com">
             </div>
 
 
@@ -36,10 +36,10 @@ Login
 
                 <label>Парола</label>
 
-                <input 
-                type="password"
-                name="password"
-                placeholder="••••••••">
+                <input
+                        type="password"
+                        name="password"
+                        placeholder="••••••••">
 
             </div>
 
@@ -54,7 +54,15 @@ Login
         <div class="switch">
 
             Нямаш профил?
+            <div class="switch">
+                Нямаш профил? <a href="{% url 'register' %}">Регистрирай се тук</a>
+            </div>
 
+        </div>
+
+
+        <div>
+            <p><a href="{% url 'password_reset'%}">Забравена парола?</a></p>
         </div>
 
     </div>
