@@ -1,147 +1,147 @@
-.auth-container {
+/*.auth-container {*/
 
-height:100vh;
+/*height:100vh;*/
 
-display:flex;
+/*display:flex;*/
 
-justify-content:center;
+/*justify-content:center;*/
 
-align-items:center;
+/*align-items:center;*/
 
-background:#363232;
+/*background:#363232;*/
 
-}
+/*}*/
 
 
 
-.auth-card {
+/*.auth-card {*/
 
-background:white;
+/*background:white;*/
 
-width:420px;
+/*width:420px;*/
 
-padding:45px;
+/*padding:45px;*/
 
-border-radius:15px;
+/*border-radius:15px;*/
 
-box-shadow:0 20px 40px rgba(0,0,0,.2);
+/*box-shadow:0 20px 40px rgba(0,0,0,.2);*/
 
-text-align:center;
+/*text-align:center;*/
 
-}
+/*}*/
 
 
 
-.auth-card h1 {
+/*.auth-card h1 {*/
 
-font-size:38px;
+/*font-size:38px;*/
 
-letter-spacing:2px;
+/*letter-spacing:2px;*/
 
-color:#B5A98A;
+/*color:#B5A98A;*/
 
-margin-bottom:10px;
+/*margin-bottom:10px;*/
 
-}
+/*}*/
 
 
 
-.subtitle {
+/*.subtitle {*/
 
-color:#777;
+/*color:#777;*/
 
-margin-bottom:30px;
+/*margin-bottom:30px;*/
 
-}
+/*}*/
 
 
 
-.input-group {
+/*.input-group {*/
 
-text-align:left;
+/*text-align:left;*/
 
-margin-bottom:20px;
+/*margin-bottom:20px;*/
 
-}
+/*}*/
 
 
 
-.input-group label {
+/*.input-group label {*/
 
-display:block;
+/*display:block;*/
 
-margin-bottom:7px;
+/*margin-bottom:7px;*/
 
-font-size:14px;
+/*font-size:14px;*/
 
-}
+/*}*/
 
 
 
-.input-group input {
+/*.input-group input {*/
 
-width:100%;
+/*width:100%;*/
 
-padding:14px;
+/*padding:14px;*/
 
-border:1px solid #ddd;
+/*border:1px solid #ddd;*/
 
-border-radius:8px;
+/*border-radius:8px;*/
 
-font-size:15px;
+/*font-size:15px;*/
 
-}
+/*}*/
 
 
 
-button {
+/*button {*/
 
-width:100%;
+/*width:100%;*/
 
-padding:15px;
+/*padding:15px;*/
 
-background:#B5A98A;
+/*background:#B5A98A;*/
 
-border:none;
+/*border:none;*/
 
-border-radius:8px;
+/*border-radius:8px;*/
 
-color:white;
+/*color:white;*/
 
-font-size:16px;
+/*font-size:16px;*/
 
-cursor:pointer;
+/*cursor:pointer;*/
 
-transition:.3s;
+/*transition:.3s;*/
 
-}
+/*}*/
 
 
 
-button:hover {
+/*button:hover {*/
 
-background:#9f916f;
+/*background:#9f916f;*/
 
-}
+/*}*/
 
 
 
-.switch {
+/*.switch {*/
 
-margin-top:25px;
+/*margin-top:25px;*/
 
-font-size:14px;
+/*font-size:14px;*/
 
-}
+/*}*/
 
 
 
-.switch a {
+/*.switch a {*/
 
-color:#B5A98A;
+/*color:#B5A98A;*/
 
-text-decoration:none;
+/*text-decoration:none;*/
 
-font-weight:bold;
+/*font-weight:bold;*/
 
-}
+/*}*/

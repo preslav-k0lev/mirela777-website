@@ -1,40 +1,34 @@
-from django.shortcuts import render, redirect, reverse
 from django.contrib.auth import authenticate, login
-
-
-from django.contrib.auth import get_user_model
-User = get_user_model()
-
-
-def login_view(request):
-    if request.method == "POST":
-        username=request.POST["username"]
-        password=request.POST["password"]
-
-        user=authenticate(request, username=username, password=password)
-
-        if user:
-            login(request,user)
-            return redirect("index")
-
-    return render(request,"users/login.html")
+from django.contrib.auth.forms import AuthenticationForm
+# from django.contrib.auth import get_user_model
+from django.contrib.auth.views import LoginView
+from django.urls import reverse_lazy
 
 
 
+from django.views.generic import FormView
+from .forms import RegisterForm, LoginForm
 
-def register_view(request):
-    if request.method=="POST":
+# User = get_user_model()
 
-        username=request.POST["username"]
-        email=request.POST["email"]
-        password=request.POST["password1"]
+class RegisterFormView(FormView):
+    template_name = 'users/register.html'
+    form_class = RegisterForm
+    success_url = reverse_lazy('login')
 
-        User.objects.create_user(
-            username=username,
-            email=email,
-            password=password
-        )
+    def form_valid(self, form):
+        print(form.cleaned_data)
+        user = form.save()
+        print(user)
+        return super().form_valid(form)
 
-        return redirect("login")
 
-    return render(request,"users/register.html")
+
+class LoginFormView(FormView):
+    template_name = 'users/login.html'
+    form_class = LoginForm
+    success_url = reverse_lazy('products')
+
+    def form_valid(self, form):
+        login(self.request, form.get_user())
+        return super().form_valid(form)

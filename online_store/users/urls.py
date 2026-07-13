@@ -1,11 +1,13 @@
 from django.urls import path
-from .views import login_view, register_view
+from django.contrib.auth.views import LoginView
+from django.contrib.auth.views import FormView
+from .views import RegisterFormView,LoginFormView
 
 
 urlpatterns=[
 
-path("login/", login_view, name="login"),
-path("register/", register_view, name="register"),
-
+path("register/", RegisterFormView.as_view(template_name="users/register.html")),
+path("login/", LoginFormView.as_view(template_name="users/login.html"))
 
 ]
+
