@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends 'users/base.html' %}
 
 {% block title %}
 
@@ -22,6 +22,7 @@ Login
         <form method="POST">
 
             {% csrf_token %}
+            {{ form.non_field_errors }}
 
             <div class="input-group">
                 <label>Имейл</label>

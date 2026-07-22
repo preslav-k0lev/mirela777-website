@@ -1,5 +1,5 @@
 """
-WSGI config for online_store project.
+WSGI online_store for online_store project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 

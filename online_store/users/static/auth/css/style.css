@@ -128,7 +128,7 @@ button[type="submit"]:hover, .auth-card button:hover {
 }
 
 /* Специфично за съобщението за парола */
-.auth-card a[innertext*="Strong password"] {
+.auth-card p {
     display: block;
     font-size: 0.75rem;
     color: #888;

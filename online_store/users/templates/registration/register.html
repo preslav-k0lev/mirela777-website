@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends 'users/base.html' %}
 
 {% load static %}
 
@@ -20,13 +20,13 @@
 
             <div class="input-group">
                 <label>Първо име</label>
-                <input type="text" , name="first_name"></input>
+                <input type="text" name="first_name">
             </div>
 
 
             <div class="input-group">
                 <label>Фамилно име</label>
-                <input type="text" , name="last_name"></input>
+                <input type="text" name="last_name">
             </div>
 
 
@@ -34,9 +34,7 @@
 
                 <label>Потребителско име</label>
 
-                <input
-                        type="text"
-                        name="username">
+                <input type="text" name="username">
 
             </div>
 
@@ -48,7 +46,7 @@
                 <input type="email" name="email">
             </div>
 
-            <a>Strong password!</a>
+            <p>Strong password!</p>
 
             <div class="input-group">
 
@@ -80,7 +78,7 @@
 
             Имаш профил?
             <div class="switch">
-                Имаш профил? <a href="">Влез тук</a>
+                Имаш профил? <a href="{% url 'login' %}">Влез тук</a>
             </div>
 
         </div>

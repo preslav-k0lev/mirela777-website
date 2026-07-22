@@ -1,5 +1,5 @@
 """
-ASGI config for online_store project.
+ASGI online_store for online_store project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 

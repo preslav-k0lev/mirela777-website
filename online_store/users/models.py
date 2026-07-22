@@ -1,6 +1,6 @@
 # users/models.py
-from django.db import models
 from django.contrib.auth.models import AbstractUser
+from django.db import models
 
 
 class Country(models.Model):
@@ -26,7 +26,7 @@ class User(AbstractUser):
     # Email for logins
     email = models.EmailField(unique=True)
     USERNAME_FIELD = "email"
-    REQUIRED_FIELDS = [""]
+    REQUIRED_FIELDS = ["username"]
 
     class Meta:
         verbose_name_plural = "Users"
